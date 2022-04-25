@@ -1,4 +1,4 @@
-const { defineConfig } = require('eslint-define-config')
+const { defineConfig } = require('eslint-define-config');
 
 module.exports = defineConfig({
   env: {
@@ -6,7 +6,7 @@ module.exports = defineConfig({
     browser: true,
     node: true,
   },
-  plugins: ['@typescript-eslint', 'prettier', 'unicorn'],
+  plugins: ['@typescript-eslint', 'unicorn'],
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',
@@ -15,7 +15,7 @@ module.exports = defineConfig({
     'plugin:markdown/recommended',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier',
+    'plugin:prettier/recommended',
   ],
   settings: {
     'import/resolver': {
@@ -138,6 +138,7 @@ module.exports = defineConfig({
     camelcase: ['error', { properties: 'never' }],
     'no-console': ['warn', { allow: ['error'] }],
     'no-debugger': 'warn',
+    'comma-dangle': ['off', 'always-multiline'], // 添加结尾的逗号
     'no-constant-condition': ['error', { checkLoops: false }],
     'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
     'no-return-await': 'error',
@@ -212,10 +213,6 @@ module.exports = defineConfig({
         math: 'always',
       },
     ],
-
-    // prettier
-    'prettier/prettier': 'error',
-
     // import
     'import/first': 'error',
     'import/no-duplicates': 'error',
@@ -261,5 +258,9 @@ module.exports = defineConfig({
 
     // eslint-plugin-eslint-comments
     'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
+    // prettier
+    'prettier/prettier': 'error',
+    'arrow-body-style': 'off',
+    'prefer-arrow-callback': 'off',
   },
-})
+});
