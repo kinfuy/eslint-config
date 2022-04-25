@@ -1,0 +1,2 @@
+## @alqmc/eslint-config
+
