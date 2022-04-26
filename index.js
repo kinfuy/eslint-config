@@ -6,7 +6,7 @@ module.exports = defineConfig({
     browser: true,
     node: true,
   },
-  plugins: ['@typescript-eslint', 'unicorn'],
+  plugins: ['@typescript-eslint', 'import'],
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',
@@ -147,10 +147,6 @@ module.exports = defineConfig({
     'prefer-const': [
       'warn',
       { destructuring: 'all', ignoreReadBeforeAssign: true },
-    ],
-    'prefer-arrow-callback': [
-      'error',
-      { allowNamedFunctions: false, allowUnboundThis: true },
     ],
     'object-shorthand': [
       'error',
