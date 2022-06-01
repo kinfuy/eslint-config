@@ -136,7 +136,6 @@ module.exports = defineConfig({
   rules: {
     // js/ts
     camelcase: ['error', { properties: 'never' }],
-    'no-console': ['warn', { allow: ['error'] }],
     'no-debugger': 'warn',
     'comma-dangle': ['off', 'always-multiline'], // 添加结尾的逗号
     'no-constant-condition': ['error', { checkLoops: false }],
@@ -144,6 +143,9 @@ module.exports = defineConfig({
     'no-return-await': 'error',
     'no-var': 'error',
     'no-empty': ['error', { allowEmptyCatch: true }],
+    'no-console': 'off',
+    'no-empty-function': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
     'prefer-const': [
       'warn',
       { destructuring: 'all', ignoreReadBeforeAssign: true },
