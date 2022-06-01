@@ -1,0 +1,27 @@
+{
+  "name": "@alqmc/eslint-config-ts",
+  "version": "0.0.6",
+  "description": "typescript eslint config",
+  "author": "kinfuy",
+  "license": "ISC",
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
+  },
+  "dependencies": {
+    "@alqmc/eslint-config-basic": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "eslint-plugin-jest": "^27.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@alqmc/eslint-config-vue",
+  "version": "0.0.6",
+  "description": "vue eslint config",
+  "author": "kinfuy",
+  "license": "ISC",
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@alqmc/eslint-config-basic": "workspace:*",
+    "@alqmc/eslint-config-ts": "workspace:*",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "local-pkg": "^0.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0"
+  }
+}
