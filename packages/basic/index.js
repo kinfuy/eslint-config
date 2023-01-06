@@ -7,7 +7,6 @@ module.exports = {
   // 要报告未使用的 eslint-disable 注释，使用 reportUnusedDisableDirectives 设置
   reportUnusedDisableDirectives: true,
   extends: [
-    'airbnb-base',
     './standard',
     'plugin:import/recommended',
     'eslint:recommended',
