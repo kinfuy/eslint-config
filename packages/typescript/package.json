@@ -1,6 +1,6 @@
 {
   "name": "@kinfuy/eslint-config-ts",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "typescript eslint config",
   "author": "kinfuy",
   "license": "ISC",
