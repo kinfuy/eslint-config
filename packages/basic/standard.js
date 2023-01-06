@@ -5,19 +5,19 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2022,
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
-    sourceType: 'module'
+    sourceType: 'module',
   },
   env: {
     es2021: true,
-    node: true
+    node: true,
   },
   plugins: ['import', 'n', 'promise'],
   globals: {
     document: 'readonly',
     navigator: 'readonly',
-    window: 'readonly'
+    window: 'readonly',
   },
   rules: {
     'no-var': 'error',
@@ -29,8 +29,8 @@ module.exports = {
       'error',
       {
         allowImplicit: false,
-        checkForEach: false
-      }
+        checkForEach: false,
+      },
     ],
     'arrow-spacing': ['error', { before: true, after: true }],
     'block-spacing': ['error', 'always'],
@@ -40,8 +40,8 @@ module.exports = {
       {
         allow: ['^UNSAFE_'],
         properties: 'never',
-        ignoreGlobals: true
-      }
+        ignoreGlobals: true,
+      },
     ],
     'comma-dangle': [
       'error',
@@ -50,8 +50,8 @@ module.exports = {
         objects: 'never',
         imports: 'never',
         exports: 'never',
-        functions: 'never'
-      }
+        functions: 'never',
+      },
     ],
     'comma-spacing': ['error', { before: false, after: true }],
     'comma-style': ['error', 'last'],
@@ -98,10 +98,10 @@ module.exports = {
           'JSXClosingFragment',
           'JSXText',
           'JSXEmptyExpression',
-          'JSXSpreadChild'
+          'JSXSpreadChild',
         ],
-        offsetTernaryExpressions: true
-      }
+        offsetTernaryExpressions: true,
+      },
     ],
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'keyword-spacing': ['error', { before: true, after: true }],
@@ -156,10 +156,10 @@ module.exports = {
         groups: [
           ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
           ['&&', '||'],
-          ['in', 'instanceof']
+          ['in', 'instanceof'],
         ],
-        allowSamePrecedence: true
-      }
+        allowSamePrecedence: true,
+      },
     ],
     'no-mixed-spaces-and-tabs': 'error',
     'no-multi-spaces': 'error',
@@ -201,8 +201,8 @@ module.exports = {
       {
         allowShortCircuit: true,
         allowTernary: true,
-        allowTaggedTemplates: true
-      }
+        allowTaggedTemplates: true,
+      },
     ],
     'no-unused-vars': [
       'error',
@@ -210,8 +210,8 @@ module.exports = {
         args: 'none',
         caughtErrors: 'none',
         ignoreRestSiblings: true,
-        vars: 'all'
-      }
+        vars: 'all',
+      },
     ],
     'no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
     'no-useless-call': 'error',
@@ -250,9 +250,9 @@ module.exports = {
         block: {
           balanced: true,
           markers: ['*package', '!', ',', ':', '::', 'flow-include'],
-          exceptions: ['*']
-        }
-      }
+          exceptions: ['*'],
+        },
+      },
     ],
     'symbol-description': 'error',
     'template-curly-spacing': ['error', 'never'],
@@ -262,8 +262,8 @@ module.exports = {
       'error',
       {
         enforceForSwitchCase: true,
-        enforceForIndexOf: true
-      }
+        enforceForIndexOf: true,
+      },
     ],
     'valid-typeof': ['error', { requireStringLiterals: true }],
     'wrap-iife': ['error', 'any', { functionPrototypeMethods: true }],
@@ -285,6 +285,6 @@ module.exports = {
     'n/no-path-concat': 'error',
     'n/process-exit-as-throw': 'error',
 
-    'promise/param-names': 'error'
-  }
+    'promise/param-names': 'error',
+  },
 };

@@ -1,6 +1,6 @@
 {
   "name": "@kinfuy/eslint-config-monorepo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "packageManager": "pnpm@7.1.0",
   "author": "kinfuy",
@@ -9,7 +9,7 @@
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "devDependencies": {
-    "@kinfuy/eslint-config": "*",
+    "@kinfuy/eslint-config-basic": "workspace:^*",
     "eslint": "^8.29.0",
     "bumpp": "^8.2.1",
     "prettier": "^2.7.1"

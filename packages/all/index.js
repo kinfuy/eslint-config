@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@kinfuy/eslint-config-vue']
+  extends: ['@kinfuy/eslint-config-vue'],
 };

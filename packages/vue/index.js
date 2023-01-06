@@ -2,7 +2,8 @@ const { isPackageExists } = require('local-pkg');
 
 const TS = isPackageExists('typescript');
 
-if (!TS) console.warn('[@kinfuy/eslint-config] TypeScript is not installed, fallback to JS only.');
+if (!TS)
+  console.warn('[@kinfuy/eslint-config] TypeScript is not installed, fallback to JS only.');
 
 module.exports = {
   overrides: [
@@ -10,16 +11,20 @@ module.exports = {
       files: ['*.vue'],
       parser: 'vue-eslint-parser',
       parserOptions: {
-        parser: '@typescript-eslint/parser'
+        parser: '@typescript-eslint/parser',
       },
       rules: {
         'no-unused-vars': 'off',
         'no-undef': 'off',
-        ...(TS ? { '@typescript-eslint/no-unused-vars': 'off' } : null)
-      }
-    }
+        ...(TS ? { '@typescript-eslint/no-unused-vars': 'off' } : null),
+      },
+    },
   ],
-  extends: ['plugin:vue/vue3-recommended', TS ? '@kinfuy/eslint-config-ts' : '@kinfuy/eslint-config-basic', 'plugin:prettier/recommended'],
+  extends: [
+    'plugin:vue/vue3-recommended',
+    TS ? '@kinfuy/eslint-config-ts' : '@kinfuy/eslint-config-basic',
+    'plugin:prettier/recommended',
+  ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -37,15 +42,15 @@ module.exports = {
     'vue/component-tags-order': [
       'error',
       {
-        order: ['template', 'script', 'style']
-      }
+        order: ['template', 'script', 'style'],
+      },
     ],
     'vue/block-tag-newline': [
       'error',
       {
         singleline: 'always',
-        multiline: 'always'
-      }
+        multiline: 'always',
+      },
     ],
     'vue/component-name-in-template-casing': ['error', 'PascalCase'],
     'vue/component-options-name-casing': ['error', 'PascalCase'],
@@ -53,15 +58,15 @@ module.exports = {
     'vue/define-macros-order': [
       'error',
       {
-        order: ['defineProps', 'defineEmits']
-      }
+        order: ['defineProps', 'defineEmits'],
+      },
     ],
     'vue/html-comment-content-spacing': [
       'error',
       'always',
       {
-        exceptions: ['-']
-      }
+        exceptions: ['-'],
+      },
     ],
     'vue/no-restricted-v-bind': ['error', '/^v-/'],
     'vue/no-useless-v-bind': 'error',
@@ -99,8 +104,8 @@ module.exports = {
       'always',
       {
         ignoreConstructors: false,
-        avoidQuotes: true
-      }
+        avoidQuotes: true,
+      },
     ],
     'vue/operator-linebreak': ['error', 'after'],
     'vue/prefer-template': 'error',
@@ -108,6 +113,6 @@ module.exports = {
     'vue/space-in-parens': ['error', 'never'],
     'vue/space-infix-ops': 'error',
     'vue/space-unary-ops': ['error', { words: true, nonwords: false }],
-    'vue/template-curly-spacing': 'error'
-  }
+    'vue/template-curly-spacing': 'error',
+  },
 };

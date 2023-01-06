@@ -2,7 +2,7 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
-    node: true
+    node: true,
   },
   // 要报告未使用的 eslint-disable 注释，使用 reportUnusedDisableDirectives 设置
   reportUnusedDisableDirectives: true,
@@ -13,7 +13,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
-    'plugin:markdown/recommended'
+    'plugin:markdown/recommended',
   ],
   ignorePatterns: [
     '*.min.*',
@@ -32,13 +32,13 @@ module.exports = {
     '__snapshots__',
     '!.github',
     '!.vitepress',
-    '!.vscode'
+    '!.vscode',
   ],
   plugins: ['html', 'unicorn'],
   settings: {
     'import/resolver': {
-      node: { extensions: ['.js', '.mjs'] }
-    }
+      node: { extensions: ['.js', '.mjs'] },
+    },
   },
   overrides: [
     {
@@ -53,15 +53,15 @@ module.exports = {
         'jsonc/no-octal-escape': 'error',
         'jsonc/object-curly-newline': ['error', { multiline: true, consistent: true }],
         'jsonc/object-curly-spacing': ['error', 'always'],
-        'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }]
-      }
+        'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
+      },
     },
     {
       files: ['*.yaml', '*.yml'],
       parser: 'yaml-eslint-parser',
       rules: {
-        'spaced-comment': 'off'
-      }
+        'spaced-comment': 'off',
+      },
     },
     {
       files: ['package.json'],
@@ -114,50 +114,50 @@ module.exports = {
               'husky',
               'simple-git-hooks',
               'lint-staged',
-              'eslintConfig'
-            ]
+              'eslintConfig',
+            ],
           },
           {
             pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
-            order: { type: 'asc' }
+            order: { type: 'asc' },
           },
           {
             pathPattern: '^exports.*$',
-            order: ['types', 'require', 'import']
-          }
-        ]
-      }
+            order: ['types', 'require', 'import'],
+          },
+        ],
+      },
     },
     {
       files: ['*.d.ts'],
       rules: {
-        'import/no-duplicates': 'off'
-      }
+        'import/no-duplicates': 'off',
+      },
     },
     {
       files: ['*.js'],
       rules: {
-        '@typescript-eslint/no-var-requires': 'off'
-      }
+        '@typescript-eslint/no-var-requires': 'off',
+      },
     },
     {
       files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
       rules: {
-        'no-void': ['error', { allowAsStatement: true }]
-      }
+        'no-void': ['error', { allowAsStatement: true }],
+      },
     },
     {
       files: ['scripts/**/*.*', 'cli.*'],
       rules: {
-        'no-console': 'off'
-      }
+        'no-console': 'off',
+      },
     },
     {
       files: ['*.test.ts', '*.test.js', '*.spec.ts', '*.spec.js'],
       rules: {
         'no-unused-expressions': 'off',
-        'no-only-tests/no-only-tests': 'error'
-      }
+        'no-only-tests/no-only-tests': 'error',
+      },
     },
     {
       // Code blocks in markdown file
@@ -175,9 +175,9 @@ module.exports = {
         'no-restricted-imports': 'off',
         'no-undef': 'off',
         'no-unused-expressions': 'off',
-        'no-unused-vars': 'off'
-      }
-    }
+        'no-unused-vars': 'off',
+      },
+    },
   ],
   rules: {
     // import
@@ -217,8 +217,8 @@ module.exports = {
       {
         anonymous: 'always',
         named: 'never',
-        asyncArrow: 'always'
-      }
+        asyncArrow: 'always',
+      },
     ],
     'nonblock-statement-body-position': ['error', 'below'],
 
@@ -228,23 +228,23 @@ module.exports = {
       'error',
       {
         destructuring: 'any',
-        ignoreReadBeforeAssign: true
-      }
+        ignoreReadBeforeAssign: true,
+      },
     ],
     'prefer-arrow-callback': [
       'error',
       {
         allowNamedFunctions: false,
-        allowUnboundThis: true
-      }
+        allowUnboundThis: true,
+      },
     ],
     'object-shorthand': [
       'error',
       'always',
       {
         ignoreConstructors: false,
-        avoidQuotes: true
-      }
+        avoidQuotes: true,
+      },
     ],
     'prefer-exponentiation-operator': 'error',
     'prefer-rest-params': 'error',
@@ -259,14 +259,14 @@ module.exports = {
       {
         line: {
           markers: ['/'],
-          exceptions: ['/', '#']
+          exceptions: ['/', '#'],
         },
         block: {
           markers: ['!'],
           exceptions: ['*'],
-          balanced: true
-        }
-      }
+          balanced: true,
+        },
+      },
     ],
 
     // best-practice
@@ -326,12 +326,12 @@ module.exports = {
         ignoreDeclarationSort: true,
         ignoreMemberSort: false,
         memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-        allowSeparatedGroups: false
-      }
+        allowSeparatedGroups: false,
+      },
     ],
 
     // yml
     'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
-    'yml/no-empty-document': 'off'
-  }
+    'yml/no-empty-document': 'off',
+  },
 };
