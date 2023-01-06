@@ -219,7 +219,6 @@ module.exports = {
         asyncArrow: 'always',
       },
     ],
-    'nonblock-statement-body-position': ['error', 'below'],
 
     // es6
     'no-var': 'error',
