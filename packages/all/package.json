@@ -1,6 +1,6 @@
 {
   "name": "@alqmc/eslint-config",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "kinfuy's ESLint config",
   "author": "kinfuy",
   "license": "MIT",
