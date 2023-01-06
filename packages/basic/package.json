@@ -1,6 +1,6 @@
 {
   "name": "@kinfuy/eslint-config-basic",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "basic eslint config",
   "author": "kinfuy",
   "license": "ISC",
