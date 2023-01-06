@@ -1,6 +1,6 @@
 {
   "name": "@alqmc/eslint-config-vue",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "vue eslint config",
   "author": "kinfuy",
   "license": "ISC",
