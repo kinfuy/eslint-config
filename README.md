@@ -1,11 +1,11 @@
-# @kinfuy/eslint-config
+# @alqmc/eslint-config
 
 kinfuy eslint config 标准库
 
 ## 安装
 
 ```sh
-pnpm add @kinfuy/eslint-config
+pnpm add @alqmc/eslint-config
 ```
 
 ## 使用
@@ -14,7 +14,7 @@ pnpm add @kinfuy/eslint-config
 
 ```json
 {
-  "extends": "@kinfuy/eslint-config"
+  "extends": "@alqmc/eslint-config"
 }
 ```
 
@@ -28,7 +28,7 @@ pnpm add eslint-import-resolver-alias
 
 ```js
 module.exports = {
-  extends: '@kinfuy/eslint-config',
+  extends: '@alqmc/eslint-config',
   settings: {
     'import/resolver': {
       alias: {
@@ -50,13 +50,13 @@ module.exports = {
 ### 如何仅使用 ts?
 
 ```sh
-pnpm add @kinfuy/eslint-config-ts
+pnpm add @alqmc/eslint-config-ts
 ```
 
 ### 如何仅使用 js?
 
 ```sh
-pnpm add @kinfuy/eslint-config-basic
+pnpm add @alqmc/eslint-config-basic
 ```
 
 ## 注意

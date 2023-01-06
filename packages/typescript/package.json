@@ -1,5 +1,5 @@
 {
-  "name": "@kinfuy/eslint-config-ts",
+  "name": "@alqmc/eslint-config-ts",
   "version": "0.0.6",
   "description": "typescript eslint config",
   "author": "kinfuy",
@@ -16,7 +16,7 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@kinfuy/eslint-config-basic": "workspace:*",
+    "@alqmc/eslint-config-basic": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",
     "eslint-plugin-jest": "^27.1.6"

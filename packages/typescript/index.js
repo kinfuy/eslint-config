@@ -1,11 +1,11 @@
 const fs = require('fs');
 const { join } = require('path');
-const basic = require('@kinfuy/eslint-config-basic');
+const basic = require('@alqmc/eslint-config-basic');
 
 const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json';
 
 module.exports = {
-  extends: ['@kinfuy/eslint-config-basic', 'plugin:import/typescript', 'plugin:@typescript-eslint/recommended'],
+  extends: ['@alqmc/eslint-config-basic', 'plugin:import/typescript', 'plugin:@typescript-eslint/recommended'],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', '.d.ts'] },

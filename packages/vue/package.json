@@ -1,5 +1,5 @@
 {
-  "name": "@kinfuy/eslint-config-vue",
+  "name": "@alqmc/eslint-config-vue",
   "version": "0.0.6",
   "description": "vue eslint config",
   "author": "kinfuy",
@@ -15,8 +15,8 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@kinfuy/eslint-config-basic": "workspace:*",
-    "@kinfuy/eslint-config-ts": "workspace:*",
+    "@alqmc/eslint-config-basic": "workspace:*",
+    "@alqmc/eslint-config-ts": "workspace:*",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-vue": "^9.8.0",

@@ -1,3 +1,3 @@
 {
-  "extends": "@kinfuy/eslint-config-basic"
+  "extends": "@alqmc/eslint-config-basic"
 }

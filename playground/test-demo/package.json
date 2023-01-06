@@ -6,7 +6,7 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@kinfuy/eslint-config": "*",
+    "@alqmc/eslint-config": "*",
     "eslint": "^8.29.0"
   }
 }
