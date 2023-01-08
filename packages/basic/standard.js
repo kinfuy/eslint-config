@@ -227,7 +227,7 @@ module.exports = {
     'object-curly-spacing': ['error', 'always'],
     'object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
     'one-var': ['error', { initialized: 'never' }],
-    'operator-linebreak': ['error', 'after', { overrides: { '?': 'before', ':': 'before', '|>': 'before' } }],
+    'operator-linebreak': ['error', 'before', { overrides: { '?': 'ignore', ':': 'ignore' } }],
     'padded-blocks': ['error', { blocks: 'never', switches: 'never', classes: 'never' }],
     'prefer-const': ['error', { destructuring: 'all' }],
     'prefer-promise-reject-errors': 'error',
