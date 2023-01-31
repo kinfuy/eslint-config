@@ -12,7 +12,7 @@
     "index.js"
   ],
   "peerDependencies": {
-    "eslint": ">=7.4.0"
+    "eslint": ">=8"
   },
   "dependencies": {
     "@alqmc/eslint-config-basic": "workspace:*",
@@ -21,8 +21,5 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-vue": "^9.8.0",
     "local-pkg": "^0.4.2"
-  },
-  "devDependencies": {
-    "eslint": "^8.29.0"
   }
 }
