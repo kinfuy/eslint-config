@@ -33,7 +33,7 @@ module.exports = {
     '!.vitepress',
     '!.vscode',
   ],
-  plugins: ['html', 'unicorn'],
+  plugins: ['html'],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.mjs'] },
@@ -285,30 +285,6 @@ module.exports = {
     'no-return-assign': 'off',
     'operator-linebreak': ['error', 'before'],
     'max-statements-per-line': ['error', { max: 1 }],
-
-    // unicorns
-    // Pass error message when throwing errors
-    'unicorn/error-message': 'error',
-    // Uppercase regex escapes
-    'unicorn/escape-case': 'error',
-    // Array.isArray instead of instanceof
-    'unicorn/no-instanceof-array': 'error',
-    // Prevent deprecated `new Buffer()`
-    'unicorn/no-new-buffer': 'error',
-    // Keep regex literals safe!
-    'unicorn/no-unsafe-regex': 'off',
-    // Lowercase number formatting for octal, hex, binary (0x1'error' instead of 0X1'error')
-    'unicorn/number-literal-case': 'error',
-    // includes over indexOf when checking for existence
-    'unicorn/prefer-includes': 'error',
-    // String methods startsWith/endsWith instead of more complicated stuff
-    'unicorn/prefer-string-starts-ends-with': 'error',
-    // textContent instead of innerText
-    'unicorn/prefer-text-content': 'error',
-    // Enforce throwing type error when throwing error while checking typeof
-    'unicorn/prefer-type-error': 'error',
-    // Use new when throwing error
-    'unicorn/throw-new-error': 'error',
 
     'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
     'eslint-comments/disable-enable-pair': 'off',
